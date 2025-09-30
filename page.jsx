@@ -1,0 +1,1 @@
+export default function Page(){return (<section className='container py-12'><h1 className='text-3xl font-bold'>Termos de Uso</h1><p className='mt-3 text-essential-gray600'>Termos básicos do site. Ajuste conforme necessidade.</p></section>);}

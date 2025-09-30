@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #ffffff;
+  --fg: #222326;
+}
+
+html, body {
+  @apply bg-white text-essential-graphite;
+}
+
+.container {
+  @apply mx-auto px-4 md:px-6 max-w-6xl;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center px-5 py-3 rounded-xl font-semibold transition shadow-card;
+}
+.btn-primary {
+  @apply bg-essential-pink text-white hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-essential-pink;
+}
+.btn-secondary {
+  @apply border border-essential-graphite text-essential-graphite hover:bg-essential-graphite hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-essential-graphite;
+}
+.badge {
+  @apply inline-flex items-center rounded-full px-3 py-1 text-sm bg-essential-gray100 text-essential-graphite;
+}
+.card {
+  @apply bg-white rounded-xl shadow-card p-6;
+}
+a.skip-link{
+  position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden;
+}
+a.skip-link:focus{
+  position:static; width:auto; height:auto;
+}
